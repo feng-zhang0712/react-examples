@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
-const App = () => {
-  return <div>React Examples</div>;
-};
+import App from './examples/App';
 
 ReactDOM.createRoot(document.getElementById('root'))
 .render(
