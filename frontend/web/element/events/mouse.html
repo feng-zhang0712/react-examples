@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+    <title>Mouse Event</title>
+  </head>
+  <body>
+    <style>
+      #parent {
+        background-color: bisque;
+      }
+
+      #child {
+        width: 300px;
+        height: 300px;
+        background-color: blueviolet;
+      }
+    </style>
+    <div>
+      <div id="parent">
+        <div id="child"></div>
+      </div>
+    </div>
+    <script>
+      const parent = document.getElementById('parent');
+
+      parent.addEventListener('mouseenter', function() {
+        console.log('mouseenter: parent');
+      });
+
+      parent.addEventListener('mouseover', function() {
+        console.log('mouseover: parent');
+      });
+
+      const chid = document.getElementById('child');
+
+      chid.addEventListener('mouseenter', function() {
+        console.log('mouseenter: child');
+      });
+      
+      chid.addEventListener('mouseover', function() {
+        console.log('mouseover: child');
+      });
+    </script>
+  </body>
+</html>
